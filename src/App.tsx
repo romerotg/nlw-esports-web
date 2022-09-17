@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 
+import * as Dialog from '@radix-ui/react-dialog';
 import { GameBanner } from './components/GameBanner';
 import { CreateAdModal } from './components/CreateAdModal';
+import { CreateAdBanner } from './components/CreateAdBanner';
 
 import './styles/main.css';
 
@@ -46,7 +48,10 @@ function App() {
         })}
       </div>
 
-      <CreateAdModal />
+      <Dialog.Root>
+        <CreateAdBanner />
+        <CreateAdModal />
+      </Dialog.Root>
     </div>
   );
 }

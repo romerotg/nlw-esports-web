@@ -5,9 +5,6 @@ import { Input } from './Form/Input';
 
 export function CreateAdModal() {
     return (
-        <Dialog.Root>
-        <CreateAdBanner />
-
         <Dialog.Portal>
           <Dialog.Overlay className="bg-black/60 inset-0 fixed" />
 
@@ -122,6 +119,5 @@ export function CreateAdModal() {
             </form>
           </Dialog.Content>
         </Dialog.Portal>
-      </Dialog.Root>
     );
 }
